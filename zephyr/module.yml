@@ -1,0 +1,4 @@
+name: zmk-keyboard-totem-prospector
+build:
+  settings:
+    board_root: .

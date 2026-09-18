@@ -5,7 +5,7 @@ if SHIELD_TOTEM_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "TOTEM"
-    
+
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
@@ -15,12 +15,6 @@ config ZMK_USB
 endif
 
 if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT || SHIELD_TOTEM_DONGLE
-
-config ZMK_UNICODE_TAP_MS
-    default 0
-
-config ZMK_UNICODE_WAIT_MS
-    default 0
 
 config ZMK_SPLIT
     default y
