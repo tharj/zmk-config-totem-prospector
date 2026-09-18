@@ -1,4 +1,7 @@
 name: zmk-keyboard-totem-prospector
 build:
+  cmake: .
+  depends:
+    - zmk-unicode
   settings:
     board_root: .
