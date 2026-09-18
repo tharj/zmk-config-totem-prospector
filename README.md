@@ -28,7 +28,7 @@ Use all three device firmware files from the same successful run for the migrati
 
 As of the migration, the latest published ZMK release is still v0.3.0. This repository intentionally follows current development to use the newer platform. Prospector's compatible branch is marked work in progress upstream. Branches can change between builds; preserve a successful firmware ZIP before rebuilding. Moving to a future stable release means changing both the ZMK revision and reusable workflow reference together after checking module compatibility.
 
-The root `CMakeLists.txt` supplies a missing ZMK keycode header specifically to the Unicode behavior source. This small compatibility workaround preserves the upstream module and can be removed once that include is fixed upstream.
+The root `CMakeLists.txt` enables a small compatibility header in `compat/include/` that supplies the missing ZMK keycode include when the Unicode behavior loads its header. It preserves the required system-header order and leaves upstream source files untouched. Remove this workaround once the missing include is fixed upstream.
 
 ## Keymap and behavior
 
