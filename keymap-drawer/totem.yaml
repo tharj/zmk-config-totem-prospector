@@ -72,7 +72,7 @@ layers:
   - {t: '{', s: 'LC/LA: .'}
   - {t: '}', s: 'LC/LA: ,'}
   - \
-  - {t: ., h: Nav}
+  - {t: ., h: Nav, s: 'Ctrl: ,'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

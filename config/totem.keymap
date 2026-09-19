@@ -191,11 +191,20 @@
             //quick-tap-ms = <175>;
         };
 
+        // Match the normal layer-tap, with a Ctrl-sensitive tap action.
+        lt_dot: layer_tap_dot_comma {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&dot_com>;
+        };
+
         dot_com: dot_comma {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COMMA>;
-            mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
     };
@@ -267,7 +276,7 @@
 //╭───────────┼────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤  ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────╮
   &kp ESC           &kp N6          &kp N7         &kp N8         &kp N9         &kp N0          &kp TILDE       &kp UNDER      &mmplus        &mmlbrc        &mmrbrc    &kp BSLH
 //╰───────────┴────────────────┴──────────────┼──────────────┼──────────────┼──────────────┤  ├──────────────┼──────────────┼──────────────┤──────────────┴──────────────┴──────────────╯
-                                                   &lt LAYER_NAV DOT      &trans         &trans            &trans       &bspc_del      &kp DOT
+                                                   &lt_dot LAYER_NAV 0      &trans         &trans            &trans       &bspc_del      &kp DOT
 //                                            ╰──────────────┴──────────────┴──────────────╯  ╰──────────────┴──────────────┴──────────────╯
             >;
         }; 

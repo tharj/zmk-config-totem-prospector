@@ -65,6 +65,10 @@ parse_config:
     '&mmv MOVE_DOWN': Mouse ↓
     '&mmv MOVE_LEFT': Mouse ←
     '&mmv MOVE_RIGHT': Mouse →
+    '&lt_dot 2 0':
+      t: .
+      h: Nav
+      s: 'Ctrl: ,'
   zmk_keycode_map:
     EXCLAMATION: '!'
     EXCL: '!'
