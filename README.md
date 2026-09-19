@@ -30,6 +30,25 @@ As of the migration, the latest published ZMK release is still v0.3.0. This repo
 
 The root `CMakeLists.txt` enables a small compatibility header in `compat/include/` that supplies the missing ZMK keycode include when the Unicode behavior loads its header. It preserves the required system-header order and leaves upstream source files untouched. Remove this workaround once the missing include is fixed upstream.
 
+## Keymap drawings
+
+![TOTEM keymap: all four layers and combos](keymap-drawer/totem.svg)
+
+[Open SVG](keymap-drawer/totem.svg) · [Download PNG](keymap-drawer/totem.png) · [Drawing workflow](https://github.com/tharj/zmk-config-totem-prospector/actions/workflows/draw-keymap.yml)
+
+Drawings use the same physical coordinates and rotations as the firmware. All combos are displayed on Base for readability; only Caps Word is restricted to Base in the actual keymap. Key centers show tap actions, bottom labels show holds, and top labels describe modifier morphs. `LC/LA` means Left Ctrl or Left Alt; uppercase Ä/Ö uses Shift. Pink keys mark an inferred layer-entry key, not a required chord.
+
+The drawing Action runs when the keymap, shield, or drawing configuration changes, and can also be run manually. It publishes a `keymap-drawings` artifact containing SVG, PNG, and parsed YAML, and updates the committed drawings on `main`. Pull requests generate an artifact without committing. Images reflect the repository keymap, not saved ZMK Studio overrides. HRM timings are documented below rather than printed on the layers.
+
+To regenerate locally with Python 3.12 or later:
+
+```sh
+python -m pip install -r keymap-drawer/requirements.txt
+python scripts/draw-keymap.py
+```
+
+Appearance, custom legends, and combo placement are configured in `keymap-drawer/config.yaml`. Generated files should not be edited by hand. PNG conversion uses resvg; Actions installs DejaVu Sans for consistent font rendering.
+
 ## Keymap and behavior
 
 Edit `config/totem.keymap`. The shield default includes that same file, so there is only one personal keymap to maintain.

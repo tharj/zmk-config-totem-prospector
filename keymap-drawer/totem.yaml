@@ -1,0 +1,185 @@
+layout: {zmk_keyboard: totem}
+layers:
+  Base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - {t: P, h: RWin}
+  - {t: A, h: LWin}
+  - {t: S, h: LAlt}
+  - {t: D, h: LCtrl}
+  - {t: F, h: LShift}
+  - G
+  - H
+  - {t: J, h: RShift}
+  - {t: K, h: RCtrl}
+  - {t: L, h: LAlt}
+  - {t: ö/Ö, s: 'LC/LA: ;'}
+  - {t: Esc, h: LCtrl}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: ä/Ä, s: 'LC/LA: /'}
+  - ''''
+  - {t: Tab, h: Nav}
+  - {t: Space, s: 'Ctrl: Bspc'}
+  - {t: Enter, h: LShift}
+  - {t: Enter, h: RShift}
+  - {t: Bspc, h: Num, s: 'Shift: Del'}
+  - {t: Mouse, h: hold}
+  Num:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: '1', h: LWin}
+  - {t: '2', h: LAlt}
+  - {t: '3', h: LCtrl}
+  - {t: '4', h: LShift}
+  - '5'
+  - '`'
+  - {t: '-', h: RShift}
+  - {t: '=', h: RCtrl}
+  - {t: '[', h: LAlt}
+  - ']'
+  - Esc
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '~'
+  - _
+  - {t: +, s: 'LC/LA: ,'}
+  - {t: '{', s: 'LC/LA: .'}
+  - {t: '}', s: 'LC/LA: ,'}
+  - \
+  - {t: ., h: Nav}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Bspc, s: 'Shift: Del'}
+  - .
+  Nav:
+  - Play/Pause
+  - Previous
+  - Next
+  - Volume −
+  - Volume +
+  - ''
+  - Home
+  - ''
+  - Page Up
+  - ''
+  - Gui+Sft+S
+  - {t: S, h: Mouse}
+  - RCtrl
+  - RShift
+  - ''
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ''
+  - Studio Unlock
+  - Ctl+Z
+  - ''
+  - {t: Num, h: go to}
+  - {t: Base, h: go to}
+  - ''
+  - ''
+  - End
+  - ''
+  - Page Down
+  - ''
+  - Play/Pause
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Bspc, s: 'Shift: Del'}
+  - .
+  Mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Mouse ↑
+  - ''
+  - ''
+  - ''
+  - ''
+  - RCtrl
+  - LShift
+  - ''
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Right Click
+  - ''
+  - Left Click
+  - Middle Click
+  - Right Click
+combos:
+- p: [20, 31]
+  k: Bootloader
+  l: [Base]
+  a: bottom
+  o: 2.3
+- p: [14, 15]
+  k: Caps Word
+  l: [Base]
+- p: [34, 35]
+  k: {t: Base, h: go to}
+  l: [Base]
+  a: bottom
+  o: 0.5
+- p: [25, 26]
+  k: {t: Nav, h: go to}
+  l: [Base]
+- p: [30, 31]
+  k: →
+  l: [Base]
+  a: bottom
+  o: 0.3
+- p: [19, 29]
+  k: ←
+  l: [Base]
+  a: right
+  o: 0.5

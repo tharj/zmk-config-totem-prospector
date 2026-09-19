@@ -1,0 +1,186 @@
+draw_config:
+  key_w: 64
+  key_h: 60
+  combo_w: 54
+  combo_h: 28
+  outer_pad_h: 80
+  separate_combo_diagrams: false
+  footer_text: Combos shown on Base for reference; only Caps Word is Base-only. LC/LA = Left Ctrl or Left Alt.
+  svg_extra_style: 'svg.keymap { font-family: DejaVu Sans, Arial, sans-serif; }
+
+    rect.combo { fill: #d8eaf4; }
+
+    text.combo { font-size: 10px; }
+
+    '
+parse_config:
+  trans_legend:
+    t: ▽
+    type: trans
+  raw_binding_map:
+    '&mmoe':
+      t: ö/Ö
+      s: 'LC/LA: ;'
+    '&mmae':
+      t: ä/Ä
+      s: 'LC/LA: /'
+    '&mmplus':
+      t: +
+      s: 'LC/LA: ,'
+    '&mmlbrc':
+      t: '{'
+      s: 'LC/LA: .'
+    '&mmrbrc':
+      t: '}'
+      s: 'LC/LA: ,'
+    '&spc_bspc':
+      t: Space
+      s: 'Ctrl: Bspc'
+    '&bspc_del':
+      t: Bspc
+      s: 'Shift: Del'
+    '&lt_bspc 1 0':
+      t: Bspc
+      h: Num
+      s: 'Shift: Del'
+    '&mo 3':
+      t: Mouse
+      h: hold
+    '&to 0':
+      t: Base
+      h: go to
+    '&to 1':
+      t: Num
+      h: go to
+    '&to 2':
+      t: Nav
+      h: go to
+    '&bootloader': Bootloader
+    '&caps_word': Caps Word
+    '&studio_unlock': Studio Unlock
+    '&mkp MB1': Left Click
+    '&mkp MB2': Right Click
+    '&mkp MB3': Middle Click
+    '&mmv MOVE_UP': Mouse ↑
+    '&mmv MOVE_DOWN': Mouse ↓
+    '&mmv MOVE_LEFT': Mouse ←
+    '&mmv MOVE_RIGHT': Mouse →
+  zmk_keycode_map:
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: '='
+    PLUS: +
+    MINUS: '-'
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    BSLH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    APOSTROPHE: ''''
+    APOS: ''''
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ','
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
+    LGUI: LWin
+    RGUI: RWin
+    LCTRL: LCtrl
+    RCTRL: RCtrl
+    LSHIFT: LShift
+    RSHFT: RShift
+    LALT: LAlt
+    RETURN: Enter
+    ESCAPE: Esc
+    ESC: Esc
+    TAB: Tab
+    HOME: Home
+    END: End
+    LEFT: ←
+    RIGHT: →
+    UP: ↑
+    DOWN: ↓
+    C_PP: Play/Pause
+    C_PLAY_PAUSE: Play/Pause
+    C_PREV: Previous
+    C_NEXT: Next
+    C_VOL_DN: Volume −
+    C_VOL_UP: Volume +
+    PG_UP: Page Up
+    PG_DN: Page Down
+  zmk_combos:
+    Bootloader:
+      layers:
+      - Base
+      align: bottom
+      offset: 2.3
+    CapsWord:
+      layers:
+      - Base
+      align: mid
+    ToBase:
+      layers:
+      - Base
+      align: bottom
+      offset: 0.5
+    ToNav:
+      layers:
+      - Base
+      align: mid
+    RightArrow:
+      layers:
+      - Base
+      align: bottom
+      offset: 0.3
+    LeftArrow:
+      layers:
+      - Base
+      align: right
+      offset: 0.5

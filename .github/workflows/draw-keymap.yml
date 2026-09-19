@@ -1,0 +1,66 @@
+name: Draw keymap
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'config/**'
+      - 'boards/shields/totem/**'
+      - 'keymap-drawer/config.yaml'
+      - 'keymap-drawer/requirements.txt'
+      - 'scripts/draw-keymap.py'
+      - '.github/workflows/draw-keymap.yml'
+  pull_request:
+    paths:
+      - 'config/**'
+      - 'boards/shields/totem/**'
+      - 'keymap-drawer/config.yaml'
+      - 'keymap-drawer/requirements.txt'
+      - 'scripts/draw-keymap.py'
+      - '.github/workflows/draw-keymap.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: draw-keymap-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: keymap-drawer/requirements.txt
+      - name: Install drawing dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-dejavu-core
+          python -m pip install -r keymap-drawer/requirements.txt
+      - name: Draw all layers and convert to PNG
+        run: python scripts/draw-keymap.py
+      - name: Upload drawings
+        uses: actions/upload-artifact@v4
+        with:
+          name: keymap-drawings
+          path: |
+            keymap-drawer/totem.svg
+            keymap-drawer/totem.png
+            keymap-drawer/totem.yaml
+          if-no-files-found: error
+      - name: Update repository drawings
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add keymap-drawer/totem.svg keymap-drawer/totem.png keymap-drawer/totem.yaml
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update keymap drawings'
+            git push
+          fi
