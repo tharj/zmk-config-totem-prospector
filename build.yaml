@@ -8,8 +8,23 @@ include:
   - board: xiao_ble//zmk
     shield: totem_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: totem_dongle_prospector
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_PROSPECTOR_STATUS_SCREEN_CLASSIC=y
+    artifact-name: totem_dongle_classic
+  - board: xiao_ble//zmk
+    shield: totem_dongle prospector_adapter
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_PROSPECTOR_STATUS_SCREEN_RADII=y
+    artifact-name: totem_dongle_radii
+  - board: xiao_ble//zmk
+    shield: totem_dongle prospector_adapter
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_PROSPECTOR_STATUS_SCREEN_FIELD=y
+    artifact-name: totem_dongle_field
+  - board: xiao_ble//zmk
+    shield: totem_dongle prospector_adapter
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_PROSPECTOR_STATUS_SCREEN_OPERATOR=y
+    artifact-name: totem_dongle_operator
   - board: xiao_ble//zmk
     shield: settings_reset
     artifact-name: settings_reset

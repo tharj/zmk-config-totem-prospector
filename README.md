@@ -12,10 +12,13 @@ Open [Build firmware](https://github.com/tharj/zmk-config-totem-prospector/actio
 | --- | --- |
 | `totem_left.uf2` | Left TOTEM half |
 | `totem_right.uf2` | Right TOTEM half |
-| `totem_dongle_prospector.uf2` | Prospector dongle |
+| `totem_dongle_classic.uf2` | Prospector dongle, Classic screen |
+| `totem_dongle_radii.uf2` | Prospector dongle, Radii screen |
+| `totem_dongle_field.uf2` | Prospector dongle, Field screen |
+| `totem_dongle_operator.uf2` | Prospector dongle, Operator screen |
 | `settings_reset.uf2` | Optional settings reset for any of the three XIAO controllers |
 
-Use all three device firmware files from the same successful run for the migration. Enter each controller's UF2 bootloader and copy its matching UF2 to the mounted drive. Settings reset is a recovery tool, not the normal keyboard firmware.
+For a full migration, use the left-half image, right-half image, and one chosen dongle image from the same successful run. Enter each controller's UF2 bootloader and copy its matching UF2 to the mounted drive. Settings reset is a recovery tool, not the normal keyboard firmware.
 
 ## Current dependencies
 
@@ -66,7 +69,7 @@ The layer constants now agree with the actual layer order. The B+N combo is name
 
 ## Prospector
 
-The Classic status screen is selected with fixed brightness 30%, ambient-light sensing disabled, and Windows-style modifier indicators. The current module provides active layer names, peripheral battery/connection status, output status, active modifiers, and Caps Word indication.
+Actions builds Classic, Radii, Field, and Operator as separate dongle firmware files in the `firmware` ZIP. Each target selects its layout with one `CONFIG_PROSPECTOR_STATUS_SCREEN_...=y` setting in `build.yaml`. They share brightness 30%, disabled ambient-light sensing, Windows-style modifier settings, and the same keymap. Flash only the desired dongle image to switch screens; the halves do not need reflashing for a screen-only change. Screen selection is compiled in, not a runtime menu. `totem_dongle_classic.uf2` replaces the previous `totem_dongle_prospector.uf2` filename. The current module provides active layer names, peripheral battery/connection status, output status, active modifiers, and Caps Word indication.
 
 Radio settings and peripheral battery reporting are retained. Device-specific display, mouse, and central settings live in `config/totem_dongle.conf`; common radio and Unicode timing settings live in `config/totem.conf`.
 
