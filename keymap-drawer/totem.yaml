@@ -38,7 +38,7 @@ layers:
   - {t: Enter, h: LShift}
   - {t: Enter, h: RShift}
   - {t: Bspc, h: Num, s: 'Shift: Del'}
-  - {t: Mouse, h: hold}
+  - {t: F13, h: Mouse}
   Num:
   - '!'
   - '@'
@@ -77,7 +77,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Bspc, s: 'Shift: Del'}
-  - .
+  - {t: F13, h: Mouse}
   Nav:
   - Play/Pause
   - Previous
@@ -93,7 +93,7 @@ layers:
   - {t: S, h: Mouse}
   - RCtrl
   - RShift
-  - ''
+  - F13
   - ←
   - ↓
   - ↑
@@ -116,7 +116,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Bspc, s: 'Shift: Del'}
-  - .
+  - F13
   Mouse:
   - ''
   - ''

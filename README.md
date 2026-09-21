@@ -76,7 +76,7 @@ Edit `config/totem.keymap`. The shield default includes that same file, so there
 - OS-key hold-taps: tap-preferred, 280 ms prior idle, 450 ms tapping term, 175 ms quick tap; includes GUI/1 on Num.
 - Other home-row hold-taps: balanced, 130 ms prior idle, 280 ms tapping term, 175 ms quick tap.
 - Opposite-hand and thumb positional triggers are retained, including the corrected Q position.
-- Outer right thumb holds Mouse momentarily. Right-click is also available on the left Space thumb while Mouse is active.
+- Outer right thumb taps F13 and holds Mouse on Base and Num using the standard layer-tap (tap-preferred, 200 ms; quick-tap and prior-idle overrides disabled). On Nav, that thumb and the physical G key both send plain F13. Mouse-layer bindings are unchanged: the outer right thumb remains right-click. Right-click is also available on the left Space thumb while Mouse is active.
 - On Num, the left Dot/Nav thumb taps `.` normally or `,` with either Ctrl held; Ctrl is suppressed for that comma. Holding still activates Nav (tap-preferred, 200 ms), including while Ctrl is held. Space and Enter remain on the other left thumbs.
 - Other modifier morphs, combos, Shift/Enter thumbs, Tab/Nav, and Backspace/Num behavior are preserved.
 - Unicode ä/ö still uses WinCompose with Right Alt as the compose key. Keep the host's US layout and existing WinCompose setup.

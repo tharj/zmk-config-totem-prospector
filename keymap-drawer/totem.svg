@@ -300,10 +300,10 @@ text.combo { font-size: 10px; }
 </g>
 <g transform="translate(638, 253)" class="key keypos-37">
 <rect rx="6" ry="6" x="-30" y="-28" width="59" height="56" class="key"/>
+<text x="0" y="0" class="key tap">F13</text>
 <a href="#Mouse">
-<text x="0" y="0" class="key tap layer-activator">Mouse</text>
-</a><text x="0" y="26" class="key hold">hold</text>
-</g>
+<text x="0" y="26" class="key hold layer-activator">Mouse</text>
+</a></g>
 <g class="combo combopos-0">
 <path d="M455,393 h-413 a6.0,6.0 0 0 1 -6.0,-6.0 v-143" class="combo"/>
 <path d="M455,393 h413 a6.0,6.0 0 0 0 6.0,-6.0 v-143" class="combo"/>
@@ -513,8 +513,10 @@ text.combo { font-size: 10px; }
 </g>
 <g transform="translate(638, 253)" class="key keypos-37">
 <rect rx="6" ry="6" x="-30" y="-28" width="59" height="56" class="key"/>
-<text x="0" y="0" class="key tap">.</text>
-</g>
+<text x="0" y="0" class="key tap">F13</text>
+<a href="#Mouse">
+<text x="0" y="26" class="key hold layer-activator">Mouse</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 898)" class="layer-Nav">
@@ -587,6 +589,7 @@ text.combo { font-size: 10px; }
 </g>
 <g transform="translate(354, 129)" class="key keypos-14">
 <rect rx="6" ry="6" x="-30" y="-28" width="59" height="56" class="key"/>
+<text x="0" y="0" class="key tap">F13</text>
 </g>
 <g transform="translate(557, 130)" class="key keypos-15">
 <rect rx="6" ry="6" x="-30" y="-28" width="59" height="56" class="key"/>
@@ -682,7 +685,7 @@ text.combo { font-size: 10px; }
 </g>
 <g transform="translate(638, 253)" class="key keypos-37">
 <rect rx="6" ry="6" x="-30" y="-28" width="59" height="56" class="key"/>
-<text x="0" y="0" class="key tap">.</text>
+<text x="0" y="0" class="key tap">F13</text>
 </g>
 </g>
 </g>
