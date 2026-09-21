@@ -9,6 +9,7 @@ on:
       - 'keymap-drawer/config.yaml'
       - 'keymap-drawer/requirements.txt'
       - 'scripts/draw-keymap.py'
+      - 'scripts/draw-overview.py'
       - '.github/workflows/draw-keymap.yml'
   pull_request:
     paths:
@@ -17,6 +18,7 @@ on:
       - 'keymap-drawer/config.yaml'
       - 'keymap-drawer/requirements.txt'
       - 'scripts/draw-keymap.py'
+      - 'scripts/draw-overview.py'
       - '.github/workflows/draw-keymap.yml'
 
 permissions:
@@ -53,13 +55,15 @@ jobs:
             keymap-drawer/totem.svg
             keymap-drawer/totem.png
             keymap-drawer/totem.yaml
+            keymap-drawer/totem-overview-*.svg
+            keymap-drawer/totem-overview-*.png
           if-no-files-found: error
       - name: Update repository drawings
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add keymap-drawer/totem.svg keymap-drawer/totem.png keymap-drawer/totem.yaml
+          git add keymap-drawer/totem.svg keymap-drawer/totem.png keymap-drawer/totem.yaml keymap-drawer/totem-overview-*.svg keymap-drawer/totem-overview-*.png
           if ! git diff --cached --quiet; then
             git commit -m 'Update keymap drawings'
             git push

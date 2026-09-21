@@ -35,13 +35,29 @@ The root `CMakeLists.txt` enables a small compatibility header in `compat/includ
 
 ## Keymap drawings
 
+### All four layers on one keyboard
+
+![TOTEM four-layer overview in warm paper](keymap-drawer/totem-overview-light.svg)
+
+[Light SVG](keymap-drawer/totem-overview-light.svg) · [Light PNG](keymap-drawer/totem-overview-light.png)
+
+![TOTEM four-layer overview in cyberpunk colors](keymap-drawer/totem-overview-dark.svg)
+
+[Dark SVG](keymap-drawer/totem-overview-dark.svg) · [Dark PNG](keymap-drawer/totem-overview-dark.png)
+
+Each key uses the same corner arrangement: **Base top-left, Num top-right, Nav bottom-left, Mouse bottom-right**. Warm paper uses charcoal, deep blue, burnt orange, and purple. Cyberpunk uses neon pink, cyan, yellow, and mint. Smaller `h:` labels show holds; superscripts refer to modifier-action notes. Repeated actions and hold labels are shown once per physical key (first occurrence in Base, Num, Nav, Mouse order); blank corners omit repeated labels. Modifier-dependent actions stay distinct, and cursor arrows are not merged with mouse movement. Labels expand into unused space, and the larger combo badges keep clear of the key text. `▽` means transparent (fall through to the next active lower layer), while `·` means no action. `→Base` and `→Num` switch layers. The corner legend, notes, and combo explanation are included in each image.
+
+Adjacent arrow combos sit at the midpoint of their source keys. Caps Word (G+H), Nav (B+N), and Base (both Enter thumbs) are centered between their sources. The Bootloader connector runs below the keyboard so it clears the thumb cluster. Combo bindings and firmware behavior are unchanged.
+
+### Individual layers
+
 ![TOTEM keymap: all four layers and combos](keymap-drawer/totem.svg)
 
 [Open SVG](keymap-drawer/totem.svg) · [Download PNG](keymap-drawer/totem.png) · [Drawing workflow](https://github.com/tharj/zmk-config-totem-prospector/actions/workflows/draw-keymap.yml)
 
 Drawings use the same physical coordinates and rotations as the firmware. All combos are displayed on Base for readability; only Caps Word is restricted to Base in the actual keymap. Key centers show tap actions, bottom labels show holds, and top labels describe modifier morphs. `LC/LA` means Left Ctrl or Left Alt; uppercase Ä/Ö uses Shift. Pink keys mark an inferred layer-entry key, not a required chord.
 
-The drawing Action runs when the keymap, shield, or drawing configuration changes, and can also be run manually. It publishes a `keymap-drawings` artifact containing SVG, PNG, and parsed YAML, and updates the committed drawings on `main`. Pull requests generate an artifact without committing. Images reflect the repository keymap, not saved ZMK Studio overrides. HRM timings are documented below rather than printed on the layers.
+The drawing Action runs when the keymap, shield, or drawing configuration changes, and can also be run manually. It publishes a `keymap-drawings` artifact containing the individual-layer and both overview SVGs/PNGs, plus parsed YAML, and updates the committed drawings on `main`. Pull requests generate an artifact without committing. Images reflect the repository keymap, not saved ZMK Studio overrides. HRM timings are documented below rather than printed on the layers.
 
 To regenerate locally with Python 3.12 or later:
 
@@ -50,7 +66,7 @@ python -m pip install -r keymap-drawer/requirements.txt
 python scripts/draw-keymap.py
 ```
 
-Appearance, custom legends, and combo placement are configured in `keymap-drawer/config.yaml`. Generated files should not be edited by hand. PNG conversion uses resvg; Actions installs DejaVu Sans for consistent font rendering.
+The individual-layer appearance, parser legends, and combo placement are configured in `keymap-drawer/config.yaml`. `scripts/draw-overview.py` combines the freshly parsed four layers using keymap-drawer corner labels and adds theme colors, hold annotations, a legend, and modifier notes. Both themes regenerate with the same command; no manual duplication of the firmware bindings is needed. Generated files should not be edited by hand. PNG conversion uses resvg; Actions installs DejaVu Sans for consistent font rendering.
 
 ## Keymap and behavior
 

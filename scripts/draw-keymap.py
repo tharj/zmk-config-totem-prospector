@@ -4,6 +4,8 @@ import subprocess
 import sys
 
 import resvg_py
+import yaml
+from importlib.util import module_from_spec, spec_from_file_location
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "keymap-drawer"
@@ -28,3 +30,9 @@ keymap(
     zoom=2, background="white",
 ))
 print("Generated keymap-drawer/totem.svg and totem.png")
+
+# Keep the combined overviews in the same regeneration workflow.
+spec = spec_from_file_location("draw_overview", ROOT / "scripts/draw-overview.py")
+overview = module_from_spec(spec)
+spec.loader.exec_module(overview)
+overview.make_overviews(ROOT, yaml.safe_load((OUT / "totem.yaml").read_text(encoding="utf-8")))

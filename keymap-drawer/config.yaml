@@ -172,8 +172,9 @@ parse_config:
     ToBase:
       layers:
       - Base
-      align: bottom
-      offset: 0.5
+      align: mid
+      width: 42
+      height: 24
     ToNav:
       layers:
       - Base
@@ -181,10 +182,14 @@ parse_config:
     RightArrow:
       layers:
       - Base
-      align: bottom
-      offset: 0.3
+      align: mid
+      width: 18
+      height: 18
+      dendron: true
     LeftArrow:
       layers:
       - Base
-      align: right
-      offset: 0.5
+      align: mid
+      width: 18
+      height: 18
+      dendron: true

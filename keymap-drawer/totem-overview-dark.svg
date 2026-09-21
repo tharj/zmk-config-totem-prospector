@@ -1,0 +1,716 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2568" height="1555" viewBox="0 0 2568 1555" class="keymap" role="img" aria-labelledby="overview-title overview-description">
+  <rect width="100%" height="100%" fill="#0c0b19" />
+  <style>/* inherit to force styles through use tags */
+svg path {
+    fill: inherit;
+}
+
+/* font and background color specifications */
+svg.keymap {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 14px;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    fill: #24292e;
+}
+
+/* default key styling */
+rect.key {
+    fill: #f6f8fa;
+}
+
+rect.key, rect.combo {
+    stroke: #c9cccf;
+    stroke-width: 1;
+}
+
+/* default key side styling, only used is draw_key_sides is set */
+rect.side {
+    filter: brightness(90%);
+}
+
+/* color accent for combo boxes */
+rect.combo, rect.combo-separate {
+    fill: #cdf;
+}
+
+/* color accent for held keys */
+rect.held, rect.combo.held {
+    fill: #fdd;
+}
+
+/* color accent for ghost (optional) keys */
+rect.ghost, rect.combo.ghost {
+    stroke-dasharray: 4, 4;
+    stroke-width: 2;
+}
+
+text {
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+/* styling for layer labels */
+text.label {
+    font-weight: bold;
+    text-anchor: start;
+    stroke: white;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for optional footer */
+text.footer {
+    text-anchor: end;
+    dominant-baseline: auto;
+    stroke: white;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for combo tap, and key non-tap label text */
+text.combo, text.hold, text.shifted, text.left, text.right, text.tl, text.tr, text.bl, text.br {
+    font-size: 11px;
+}
+
+text.hold, text.bl, text.br {
+    text-anchor: middle;
+    dominant-baseline: auto;
+}
+
+text.shifted, text.tl, text.tr {
+    text-anchor: middle;
+    dominant-baseline: hanging;
+}
+
+text.left, text.tl, text.bl {
+    text-anchor: start;
+}
+
+text.right, text.tr, text.br {
+    text-anchor: end;
+}
+
+text.layer-activator {
+    text-decoration: underline;
+}
+
+/* styling for hold/shifted label text in combo box */
+text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
+    font-size: 8px;
+}
+
+/* lighter symbol for transparent keys */
+text.trans {
+    fill: #7b7e81;
+}
+
+/* styling for combo dendrons */
+path.combo {
+    stroke-width: 1;
+    stroke: gray;
+    fill: none;
+}
+
+/* Start Tabler Icons Cleanup */
+/* cannot use height/width with glyphs */
+.icon-tabler &gt; path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: 2;
+}
+/* hide tabler's default box */
+.icon-tabler &gt; path[stroke="none"][fill="none"] {
+    visibility: hidden;
+}
+/* End Tabler Icons Cleanup */
+
+
+svg.keymap { font-family: Arial, DejaVu Sans, sans-serif; fill: #f4efff; }
+rect.key { fill: #17162b; stroke: #3b3658; stroke-width: 1.6; }
+rect.combo { fill: #26213d; stroke: #8f80ae; stroke-width: 1.5; }
+path.combo { fill: none; stroke: #8f80ae; stroke-width: 1.6; }
+.thumb-combo text.combo { font-size: 16px; }
+text.combo { fill: #f4efff; font-size: 21px; font-weight: 600; }
+text.sub { font-size: 17px; font-weight: 400; }
+text.tl, text.tr, text.bl, text.br { font-weight: 600; }
+text.tl, text.tr { dominant-baseline: hanging; }
+text.bl, text.br { dominant-baseline: auto; }
+text.tl, text.bl { text-anchor: start; }
+text.tr, text.br { text-anchor: end; }
+text.tl { fill: #ff59bf; }
+text.tr { fill: #42e8ff; }
+text.bl { fill: #ffe569; }
+text.br { fill: #72ffc6; }
+</style>
+  <title id="overview-title">TOTEM four-layer overview — dark</title>
+  <desc id="overview-description">38 physical keys. Base top left, Num top right, Nav bottom left, Mouse bottom right. Six combos connect their source keys.</desc>
+  <g transform="translate(0,220)" id="keyboard">
+    <g transform="translate(70, 0)" class="layer-Overview">
+      <g transform="translate(0, 55)">
+        <g transform="translate(220, 322) rotate(-10.0)" class="key keypos-0">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">Q<title>Base: {'t': 'Q'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">!<title>Num: {'t': '!'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">Play/II<title>Nav: {'t': 'Play/Pause'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 0</title>
+        </g>
+        <g transform="translate(410, 176) rotate(-4.0)" class="key keypos-1">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">W<title>Base: {'t': 'W'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">@<title>Num: {'t': '@'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">Prev<title>Nav: {'t': 'Previous'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 1</title>
+        </g>
+        <g transform="translate(604, 80)" class="key keypos-2">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">E<title>Base: {'t': 'E'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">#<title>Num: {'t': '#'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">Next<title>Nav: {'t': 'Next'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 2</title>
+        </g>
+        <g transform="translate(773, 158)" class="key keypos-3">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">R<title>Base: {'t': 'R'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">$<title>Num: {'t': '$'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">Vol−<title>Nav: {'t': 'Volume −'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 3</title>
+        </g>
+        <g transform="translate(943, 184)" class="key keypos-4">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">T<title>Base: {'t': 'T'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">%<title>Num: {'t': '%'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">Vol+<title>Nav: {'t': 'Volume +'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 4</title>
+        </g>
+        <g transform="translate(1485, 184)" class="key keypos-5">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">Y<title>Base: {'t': 'Y'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">^<title>Num: {'t': '^'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 5</title>
+        </g>
+        <g transform="translate(1655, 158)" class="key keypos-6">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">U<title>Base: {'t': 'U'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">&amp;<title>Num: {'t': '&amp;'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">Home<title>Nav: {'t': 'Home'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 6</title>
+        </g>
+        <g transform="translate(1825, 80)" class="key keypos-7">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">I<title>Base: {'t': 'I'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">*<title>Num: {'t': '*'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:28.0px">↑<title>Mouse: {'t': 'Mouse ↑'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 7</title>
+        </g>
+        <g transform="translate(2017, 176) rotate(4.0)" class="key keypos-8">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">O<title>Base: {'t': 'O'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">(<title>Num: {'t': '('}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">PgUp<title>Nav: {'t': 'Page Up'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 8</title>
+        </g>
+        <g transform="translate(2207, 323) rotate(10.0)" class="key keypos-9">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">P<title>Base: {'t': 'P', 'h': 'RWin'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">)<title>Num: {'t': ')'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:RWin</text>
+          <title>Physical key 9</title>
+        </g>
+        <g transform="translate(249, 480) rotate(-10.0)" class="key keypos-10">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">A<title>Base: {'t': 'A', 'h': 'LWin'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">1<title>Num: {'t': '1', 'h': 'LWin'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:21.8px">Win+Sft+S<title>Nav: {'t': 'Gui+Sft+S'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:LWin</text>
+          <title>Physical key 10</title>
+        </g>
+        <g transform="translate(421, 336) rotate(-4.0)" class="key keypos-11">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">S<title>Base: {'t': 'S', 'h': 'LAlt'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">2<title>Num: {'t': '2', 'h': 'LAlt'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:LAlt</text>
+          <text x="-65" y="27" class="sub bl" style="font-weight:400">h:Mouse</text>
+          <title>Physical key 11</title>
+        </g>
+        <g transform="translate(604, 240)" class="key keypos-12">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">D<title>Base: {'t': 'D', 'h': 'LCtrl'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">3<title>Num: {'t': '3', 'h': 'LCtrl'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">RCtl<title>Nav: {'t': 'RCtrl'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:LCtl</text>
+          <title>Physical key 12</title>
+        </g>
+        <g transform="translate(773, 318)" class="key keypos-13">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">F<title>Base: {'t': 'F', 'h': 'LShift'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">4<title>Num: {'t': '4', 'h': 'LShift'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:26.3px">RSft<title>Nav: {'t': 'RShift'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:26.3px">LSft<title>Mouse: {'t': 'LShift'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:LSft</text>
+          <title>Physical key 13</title>
+        </g>
+        <g transform="translate(943, 344)" class="key keypos-14">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">G<title>Base: {'t': 'G'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">5<title>Num: {'t': '5'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 14</title>
+        </g>
+        <g transform="translate(1485, 346)" class="key keypos-15">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">H<title>Base: {'t': 'H'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">`<title>Num: {'t': '`'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">←<title>Nav: {'t': '←'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 15</title>
+        </g>
+        <g transform="translate(1655, 318)" class="key keypos-16">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">J<title>Base: {'t': 'J', 'h': 'RShift'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">-<title>Num: {'t': '-', 'h': 'RShift'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">↓<title>Nav: {'t': '↓'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:28.0px">←<title>Mouse: {'t': 'Mouse ←'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:RSft</text>
+          <title>Physical key 16</title>
+        </g>
+        <g transform="translate(1825, 240)" class="key keypos-17">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">K<title>Base: {'t': 'K', 'h': 'RCtrl'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">=<title>Num: {'t': '=', 'h': 'RCtrl'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">↑<title>Nav: {'t': '↑'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:28.0px">↓<title>Mouse: {'t': 'Mouse ↓'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:RCtl</text>
+          <title>Physical key 17</title>
+        </g>
+        <g transform="translate(2005, 336) rotate(4.0)" class="key keypos-18">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">L<title>Base: {'t': 'L', 'h': 'LAlt'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">[<title>Num: {'t': '[', 'h': 'LAlt'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">→<title>Nav: {'t': '→'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:28.0px">→<title>Mouse: {'t': 'Mouse →'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:LAlt</text>
+          <title>Physical key 18</title>
+        </g>
+        <g transform="translate(2180, 480) rotate(10.0)" class="key keypos-19">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:26.3px">ö/Ö¹<title>Base: {'t': 'ö/Ö', 's': 'LC/LA: ;'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">]<title>Num: {'t': ']'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 19</title>
+        </g>
+        <g transform="translate(97, 597) rotate(-10.0)" class="key keypos-20">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">Esc<title>Base: {'t': 'Esc', 'h': 'LCtrl'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">Unlock<title>Nav: {'t': 'Studio Unlock'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">▽<title>Mouse: {'t': '▽', 'type': 'trans'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:LCtl</text>
+          <title>Physical key 20</title>
+        </g>
+        <g transform="translate(276, 637) rotate(-10.0)" class="key keypos-21">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">Z<title>Base: {'t': 'Z'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">6<title>Num: {'t': '6'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">Ctl+Z<title>Nav: {'t': 'Ctl+Z'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 21</title>
+        </g>
+        <g transform="translate(433, 496) rotate(-4.0)" class="key keypos-22">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">X<title>Base: {'t': 'X'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">7<title>Num: {'t': '7'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 22</title>
+        </g>
+        <g transform="translate(604, 400)" class="key keypos-23">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">C<title>Base: {'t': 'C'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">8<title>Num: {'t': '8'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">→Num<title>Nav: {'t': 'Num', 'h': 'go to'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="27" class="sub bl" style="font-weight:400">switch</text>
+          <title>Physical key 23</title>
+        </g>
+        <g transform="translate(773, 478)" class="key keypos-24">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">V<title>Base: {'t': 'V'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">9<title>Num: {'t': '9'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">→Base<title>Nav: {'t': 'Base', 'h': 'go to'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="27" class="sub bl" style="font-weight:400">switch</text>
+          <title>Physical key 24</title>
+        </g>
+        <g transform="translate(943, 504)" class="key keypos-25">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">B<title>Base: {'t': 'B'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">0<title>Num: {'t': '0'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 25</title>
+        </g>
+        <g transform="translate(1485, 506)" class="key keypos-26">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">N<title>Base: {'t': 'N'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">~<title>Num: {'t': '~'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 26</title>
+        </g>
+        <g transform="translate(1655, 478)" class="key keypos-27">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">M<title>Base: {'t': 'M'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">_<title>Num: {'t': '_'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">End<title>Nav: {'t': 'End'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 27</title>
+        </g>
+        <g transform="translate(1825, 400)" class="key keypos-28">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">,<title>Base: {'t': ','}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">+²<title>Num: {'t': '+', 's': 'LC/LA: ,'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 28</title>
+        </g>
+        <g transform="translate(1994, 496) rotate(4.0)" class="key keypos-29">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">.<title>Base: {'t': '.'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">{³<title>Num: {'t': '{', 's': 'LC/LA: .'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:28.0px">PgDn<title>Nav: {'t': 'Page Down'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 29</title>
+        </g>
+        <g transform="translate(2153, 638) rotate(10.0)" class="key keypos-30">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:26.3px">ä/Ä⁴<title>Base: {'t': 'ä/Ä', 's': 'LC/LA: /'}</title>
+          </text>
+          <text x="53" y="-61" class="key tr" style="font-size:28.0px">}⁵<title>Num: {'t': '}', 's': 'LC/LA: ,'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">·<title>Nav: {'t': ''}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 30</title>
+        </g>
+        <g transform="translate(2332, 597) rotate(10.0)" class="key keypos-31">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">'<title>Base: {'t': "'"}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">\<title>Num: {'t': '\\'}</title>
+          </text>
+          <text x="-51" y="61" class="key bl" style="font-size:28.0px">Play/II<title>Nav: {'t': 'Play/Pause'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 31</title>
+        </g>
+        <g transform="translate(725, 674)" class="key keypos-32">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">Tab<title>Base: {'t': 'Tab', 'h': 'Nav'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">.⁶<title>Num: {'t': '.', 'h': 'Nav', 's': 'Ctrl: ,'}</title>
+          </text>
+          <text x="-65" y="61" class="key bl" style="font-size:22.0px">▽<title>Nav: {'type': 'held'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:Nav</text>
+          <title>Physical key 32</title>
+        </g>
+        <g transform="translate(914, 699) rotate(15.0)" class="key keypos-33">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">Space⁷<title>Base: {'t': 'Space', 's': 'Ctrl: Bspc'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:22.0px">▽<title>Num: {'t': '▽', 'type': 'trans'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:28.0px">Click R<title>Mouse: {'t': 'Right Click'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <title>Physical key 33</title>
+        </g>
+        <g transform="translate(1087, 771) rotate(30.0)" class="key keypos-34">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">Enter<title>Base: {'t': 'Enter', 'h': 'LShift'}</title>
+          </text>
+          <text x="53" y="-64" class="key tr" style="font-size:22.0px">▽<title>Num: {'t': '▽', 'type': 'trans'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:22.0px">·<title>Mouse: {'t': ''}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:LSft</text>
+          <title>Physical key 34</title>
+        </g>
+        <g transform="translate(1342, 772) rotate(-30.0)" class="key keypos-35">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-53" y="-64" class="key tl" style="font-size:28.0px">Enter<title>Base: {'t': 'Enter', 'h': 'RShift'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:22.0px">▽<title>Num: {'t': '▽', 'type': 'trans'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:28.0px">Click L<title>Mouse: {'t': 'Left Click'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-53" y="-28" class="sub tl" style="font-weight:400">h:RSft</text>
+          <title>Physical key 35</title>
+        </g>
+        <g transform="translate(1514, 699) rotate(-15.0)" class="key keypos-36">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:28.0px">Bspc⁸<title>Base: {'t': 'Bspc', 'h': 'Num', 's': 'Shift: Del'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:28.0px">Click M<title>Mouse: {'t': 'Middle Click'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">h:Num</text>
+          <title>Physical key 36</title>
+        </g>
+        <g transform="translate(1701, 674)" class="key keypos-37">
+          <rect rx="12" ry="12" x="-75" y="-71" width="150" height="142" class="key" />
+          <text x="-65" y="-61" class="key tl" style="font-size:21.1px">Mouse<title>Base: {'t': 'Mouse', 'h': 'hold'}</title>
+          </text>
+          <text x="65" y="-61" class="key tr" style="font-size:28.0px">.<title>Num: {'t': '.'}</title>
+          </text>
+          <text x="65" y="61" class="key br" style="font-size:28.0px">Click R<title>Mouse: {'t': 'Right Click'}</title>
+          </text>
+          <path d="M-7,0 H7 M0,-7 V7" fill="none" stroke="#302945" stroke-width="1.3" />
+          <text x="-65" y="-25" class="sub tl" style="font-weight:400">hold</text>
+          <title>Physical key 37</title>
+        </g>
+        <g class="combo combopos-0">
+          <path d="M1214,938 h-1112 a6.0,6.0 0 0 1 -6.0,-6.0 v-282" class="combo" />
+          <path d="M1214,938 h1112 a6.0,6.0 0 0 0 6.0,-6.0 v-282" class="combo" />
+          <rect rx="12" ry="12" x="1125" y="916" width="178" height="44" class="combo" />
+          <text x="1214" y="938" class="combo tap">Bootloader</text>
+        </g>
+        <g class="combo combopos-1">
+          <path d="M1214.00,345.00 L1410.43,345.43" class="combo" />
+          <path d="M1214.00,345.00 L1018.03,344.28" class="combo" />
+          <rect rx="12" ry="12" x="1141" y="323" width="146" height="44" class="combo" />
+          <text x="1214" y="345" class="combo tap">Caps Word</text>
+        </g>
+        <g class="combo thumb-combo combopos-2">
+          <path d="M1214.00,771.00 L1254.70,771.19" class="combo" />
+          <path d="M1214.00,771.00 L1173.66,770.94" class="combo" />
+          <rect rx="12" ry="12" x="1176" y="755" width="76" height="32" class="combo thumb-combo" />
+          <text x="1214" y="771" class="combo thumb-combo tap">→Base</text>
+        </g>
+        <g class="combo combopos-3">
+          <path d="M1214.00,505.00 L1410.43,505.43" class="combo" />
+          <path d="M1214.00,505.00 L1018.03,504.28" class="combo" />
+          <rect rx="12" ry="12" x="1141" y="483" width="146" height="44" class="combo" />
+          <text x="1214" y="505" class="combo tap">→Nav</text>
+        </g>
+        <g class="combo combopos-4">
+          <path d="M2242.00,617.00 L2252.52,614.62" class="combo" />
+          <path d="M2242.00,617.00 L2232.13,619.35" class="combo" />
+          <rect rx="12" ry="12" x="2222" y="600" width="40" height="34" class="combo" />
+          <text x="2242" y="617" class="combo tap">→</text>
+        </g>
+        <g class="combo combopos-5">
+          <path d="M2087.00,488.00 L2069.87,489.47" class="combo" />
+          <path d="M2087.00,488.00 L2102.49,486.64" class="combo" />
+          <rect rx="12" ry="12" x="2067" y="471" width="40" height="34" class="combo" />
+          <text x="2087" y="488" class="combo tap">←</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="legend">
+    <text x="70" y="76" style="font-size:54;font-weight:700;text-anchor:start;letter-spacing:7">TOTEM</text>
+    <text x="73" y="120" style="font-size:19;text-anchor:start;letter-spacing:3;fill:#b5accd">FOUR LAYERS / ONE KEYBOARD</text>
+    <text x="73" y="161" style="font-size:15;text-anchor:start;letter-spacing:3;fill:#b5accd">CYBERPUNK</text>
+    <rect x="2093.0" y="37" width="180" height="145" rx="14" fill="#17162b" stroke="#3b3658" stroke-width="1.5" />
+    <text x="2109.0" y="57" class="tl" style="font-size:22">Base</text>
+    <text x="2257.0" y="57" class="tr" style="font-size:22">Num</text>
+    <text x="2109.0" y="164" class="bl" style="font-size:22">Nav</text>
+    <text x="2257.0" y="164" class="br" style="font-size:22">Mouse</text>
+    <text x="2303.0" y="63" style="font-size:21;text-anchor:start">Corner = layer</text>
+    <text x="2303.0" y="97" style="font-size:20;text-anchor:start;fill:#b5accd">h: = hold action</text>
+    <text x="2303.0" y="129" style="font-size:20;text-anchor:start;fill:#b5accd">▽ = fall through</text>
+    <text x="2303.0" y="161" style="font-size:20;text-anchor:start;fill:#b5accd">· = no action</text>
+    <path d="M70,208 H2498.0" stroke="#3b3658" stroke-width="1" />
+  </g>
+  <g id="notes">
+    <path d="M70,1300.0 H2498.0" stroke="#3b3658" stroke-width="1" />
+    <text x="70" y="1334.0" style="font-size:18;text-anchor:start;letter-spacing:2">MODIFIER ACTIONS</text>
+    <text x="70" y="1368.0" style="font-size:20;text-anchor:start;fill:#b5accd">1   ö/Ö: LC/LA: ;</text>
+    <text x="70" y="1398.0" style="font-size:20;text-anchor:start;fill:#b5accd">2   +: LC/LA: ,</text>
+    <text x="70" y="1428.0" style="font-size:20;text-anchor:start;fill:#b5accd">3   {: LC/LA: .</text>
+    <text x="70" y="1458.0" style="font-size:20;text-anchor:start;fill:#b5accd">4   ä/Ä: LC/LA: /</text>
+    <text x="520" y="1368.0" style="font-size:20;text-anchor:start;fill:#b5accd">5   }: LC/LA: ,</text>
+    <text x="520" y="1398.0" style="font-size:20;text-anchor:start;fill:#b5accd">6   .: Ctrl: ,</text>
+    <text x="520" y="1428.0" style="font-size:20;text-anchor:start;fill:#b5accd">7   Space: Ctrl: Bspc</text>
+    <text x="520" y="1458.0" style="font-size:20;text-anchor:start;fill:#b5accd">8   Bspc: Shift: Del</text>
+    <text x="1238.0" y="1334.0" style="font-size:18;text-anchor:start;fill:#f4efff">COMBOS</text>
+    <text x="1238.0" y="1364.0" style="font-size:20;text-anchor:start;fill:#b5accd">Caps Word: G + H (Base only). Other combos work on all layers.</text>
+    <text x="1238.0" y="1394.0" style="font-size:20;text-anchor:start;fill:#b5accd">→Nav: B + N.  →Base: both Enter thumbs.  Bootloader: Esc + apostrophe.</text>
+    <text x="1238.0" y="1424.0" style="font-size:20;text-anchor:start;fill:#b5accd">Arrows: ö + dot = ←; ä + apostrophe = →. Lines show physical source keys.</text>
+    <text x="1238.0" y="1454.0" style="font-size:20;text-anchor:start;fill:#b5accd">LC/LA = Left Ctrl or Left Alt. Win = GUI. Sft = Shift. Click L/M/R = mouse buttons.</text>
+    <text x="70" y="1519.0" style="font-size:19;text-anchor:start;fill:#b5accd">Repeated actions and holds are shown once per key; blank corners omit repeats.  •  Repository keymap; Studio overrides not included.</text>
+  </g>
+</svg>
